@@ -4,10 +4,9 @@ Since this is an end-to-end project, it will cover every step from data acquisit
 
 ## Prerequisites
 
-* Amazon account
+* AWS Root User for billing
+* AWS IAM User for using AWS SageMaker
 * Android Studio
-* Root User for billing
-* IAM User for using AWS SageMaker
 
 ## Assumptions
 
