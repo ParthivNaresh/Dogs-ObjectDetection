@@ -24,3 +24,4 @@ Choose a default location and fire away.
 
 ![picture](https://github.com/ParthivNaresh/Dogs-ObjectDetection-SageMaker/blob/DataAcquisition/DataCollection/Fatkun_03.jpg)
 
+This step will take a while as you try to collect as much data as possible. For organizational purposes keep different folders for each breed, and a separate folder for images with multiple breeds.
