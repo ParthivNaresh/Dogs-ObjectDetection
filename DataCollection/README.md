@@ -1,5 +1,5 @@
 # Data Collection
-After determining a problem statement or object, the next step in any ML/DL problem is to understand the data that will be gathered, and to ensure that it's expansive enough to provide as robust of a model as possible.
+After determining a problem statement or objective, the next step in any ML/DL problem is to understand the data that will be gathered, and to ensure that it's expansive enough to provide as robust of a model as possible.
 
 ## Characteristics of the Data
 
@@ -12,12 +12,15 @@ This would imply some images with:
 
 ## Acquiring the Data
 
-Fatkun Batch Download Image is a Chrome extension that aggregates all image files open in your Chrome browser or tab. Images can be filtered based on size and then saved
+Fatkun Batch Download Image is a Chrome extension that aggregates all image files open in your Chrome browser or tab. Images can be filtered based on size and then saved.
 
 ![picture](https://github.com/ParthivNaresh/Dogs-ObjectDetection-SageMaker/blob/DataAcquisition/DataCollection/Fatkun_01.jpg)
 
-Chrome has a default setting that initiates a popup asking you to confirm where you want to save each file. This needs to be turned off before downloading hundreds of images otherwise you'll spend half your time accepting dialogues. Choose a default location and fire away.
+> Chrome has a default setting that initiates a popup asking you to confirm where you want to save each file.
+This needs to be turned off before downloading hundreds of images otherwise you'll spend half your time accepting dialogues.
+Choose a default location and fire away.
 
 ![picture](https://github.com/ParthivNaresh/Dogs-ObjectDetection-SageMaker/blob/DataAcquisition/DataCollection/Fatkun_02.jpg)
 
 ![picture](https://github.com/ParthivNaresh/Dogs-ObjectDetection-SageMaker/blob/DataAcquisition/DataCollection/Fatkun_03.jpg)
+
