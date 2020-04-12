@@ -12,7 +12,7 @@ This would imply some images with:
 
 ## Acquiring the Data
 
-Fatkun Batch Download Image is a Chrome extension that aggregates all image files open in your Chrome browser or tab. Images can be filtered based on size and then saved.
+[**Fatkun Batch Download Image**](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en) is a Chrome extension that aggregates all image files open in your Chrome browser or tab. Images can be filtered based on size and then saved.
 
 ![picture](https://github.com/ParthivNaresh/Dogs-ObjectDetection-SageMaker/blob/DataAcquisition/DataCollection/Fatkun_01.jpg)
 
@@ -24,4 +24,9 @@ Choose a default location and fire away.
 
 ![picture](https://github.com/ParthivNaresh/Dogs-ObjectDetection-SageMaker/blob/DataAcquisition/DataCollection/Fatkun_03.jpg)
 
-This step will take a while as you try to collect as much data as possible. For organizational purposes keep different folders for each breed, and a separate folder for images with multiple breeds.
+This step will take a while as you try to collect as much data as possible. For organizational purposes keep different folders for each breed. Download as many images as you want, these models rely on a lot of data so you can't have too much.
+
+## Creating an S3 Bucket
+
+Amazon Simple Storage Service (S3) is a way to store data within the AWS ecosystem. The AWS Command Line Interface (CLI) and the AWS SDK (Boto3) allow for easy management of this data. We'll be using both of these later, but for now we need to create the S3 bucket where all of our dog images will go for easy access.
+
