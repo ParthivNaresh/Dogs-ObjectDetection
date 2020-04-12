@@ -39,18 +39,43 @@ I'll be writing all the subsequent code in this project using a Notebook instanc
 
 Amazon Simple Storage Service (S3) is a way to store data within the AWS ecosystem. The AWS Command Line Interface (CLI) and the AWS SDK (Boto3) allow for easy management of this data. We'll be using both of these later, but for now we need to create the S3 bucket where all of our dog images will go for easy access.
 
-The first way to create an S3 bucket is through the console:
+Through the AWS Console:
 1. Navigate from the AWS Management Console to S3.
-2. Click on Create Bucket in the top right corner.
+2. Click on Create Bucket.
 3. Input a unique bucket name and choose your region, preferrably something close to you.
 4. Scroll down and click on Create Bucket.
 
-Another way to create an S3 bucket is through the AWS SDK using Boto3 (if you're using Python):
+Through the AWS SDK:
 ```Python
 import boto3
 
-client = boto3.client('s3')
-response = client.create_bucket(
-    Bucket='which-woofer-bucket'
+s3 = boto3.client('s3')
+bucket_name = "{INSERT YOUR BUCKET NAME HERE}"
+response = s3.create_bucket(
+    Bucket = bucket_name
 )
 ```
+### Adding folders
+
+Now we're going to add folders to our bucket within which we'll keep our image data. The folder structure will begin with Training/ followed by a folder for each breed.
+
+Through the AWS Console:
+1. Navigate to your S3 bucket.
+2. Click on Create folder.
+3. Name it "Training" and save it. Click on the folder so your current path is S3/{YOUR BUCKET NAME}/Training.
+
+Through the AWS SDK:
+```Python
+training_dir = 'Training'
+
+s3.put_object(Bucket = bucket_name, Key = f'{training_dir}/')
+```
+
+## Uploading the data
+
+Now that we have our training folder in S3, we can push the images we downloaded via Fatkun onto our remote bucket, keeping everything separated by breed.
+
+Through the AWS Console:
+1. Navigate to your training folder.
+2. Click on Upload, and add all the folders you have filled with dog images.
+3. Click on Upload.
